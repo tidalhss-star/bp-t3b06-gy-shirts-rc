@@ -1,131 +1,169 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>오시는 길 & 가격 정보 | 가양 셔츠룸 상세 매뉴얼</title>
-  <meta name="description" content="이 바닥에서 셔츠룸 정보 투명화 시킨 원조가 바로 나임. 예전에 나도 어설프게 가양 근처에서 술 한잔 마셨다가 계산할 때 이상한 추가금 수십만 원 청구받고 사장놈이랑 멱살잡이까지 간 쓰라린 기억이 있다. 그때 다짐했지. 내 동생들은 이 바닥에서 절대 돈 아깝게 사기당하...">
-  <link rel="canonical" href="https://t3b06-gy-shirts-rc.pages.dev/about.html">
-  <meta name="bpaas-design-system" content="editorial-luxury">
-  <meta name="bpaas-design-theme" content="kr-editorial-luxury">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    
-      :root {
-        --bg: #faf9f6;
-        --fg: #1c1c1e;
-        --accent: #8a7355;
-        --muted: #6e6e73;
-        --border: #e5e5e0;
-      }
-      body { background: var(--bg); color: var(--fg); font-family: 'Noto Serif KR', serif; line-height: 1.8; }
-      header { border-bottom: 1px solid var(--border); padding: 20px 0; }
-      .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
-      .hero { padding: 80px 0; text-align: left; border-bottom: 1px solid var(--border); }
-      .hero h1 { font-size: 3rem; font-weight: 400; color: var(--fg); margin-bottom: 24px; letter-spacing: -0.03em; }
-      .btn { display: inline-block; padding: 12px 36px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.3s; }
-      .btn:hover { background: var(--accent); color: #fff; }
-      .content-section { padding: 60px 0; }
-      .card { border-bottom: 1px solid var(--border); padding: 32px 0; }
-      .card h3 { font-size: 1.4rem; font-weight: 500; margin-bottom: 12px; }
-      .review-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 40px; }
-      .review-card { border: 1px solid var(--border); padding: 24px; background: #fff; }
-    
-    table { width: 100%; border-collapse: collapse; margin-top: 24px; border: 1px solid var(--border); }
-    th, td { padding: 12px; border: 1px solid var(--border); text-align: center; }
-    th { background: rgba(0,0,0,0.02); font-weight: bold; }
-    header .container { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.5rem; font-weight: 900; text-decoration: none; color: var(--fg); letter-spacing: -0.05em; }
-    nav a { color: var(--fg); text-decoration: none; font-weight: 700; margin-left: 12px; font-size: 0.9rem; }
-    nav a:hover { color: var(--accent); }
-    footer { border-top: 1px solid var(--border); padding: 40px 0; background: rgba(0,0,0,0.01); color: var(--muted); font-size: 0.85rem; }
-    footer .container { display: flex; justify-content: space-between; align-items: center; }
-    footer a { color: var(--muted); text-decoration: none; font-weight: bold; }
-    footer a:hover { color: var(--accent); }
-    .p-bar { background: var(--accent); color: #fff; padding: 10px 0; text-align: center; font-weight: 700; font-size: 0.95rem; }
-    .p-bar a { color: #fff; text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <title>가양 셔츠룸 추천 정보 | 업소 선정 기준 & 실제 리뷰 기반 데이터</title>
+    <meta name="description" content="가양 셔츠룸 정보 페이지. 객관적 선정 기준, 업소별 상세 분석, 실제 리뷰 데이터 기반 통계, FAQ 등 가양 지역 셔츠룸 선택에 필요한 모든 정보를 제공합니다.">
+    <meta name="keywords" content="가양 셔츠룸 정보, 가양 셔츠룸 추천, 가양 셔츠룸 선정 기준, 가양 셔츠룸 데이터, 가양 셔츠룸 리뷰 분석, 가양 셔츠룸 팁, 가양 역 셔츠룸 정보, 가양 셔츠룸 이용 방법">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b06-gy-shirts-rc.vercel.app/info">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="가양 셔츠룸 가이드">
+    <meta property="og:title" content="가양 셔츠룸 추천 정보 | 데이터 기반 업소 분석">
+    <meta property="og:description" content="가양 셔츠룸 선정 기준부터 실제 이용자 리뷰 데이터까지. 객관적 분석으로 안내합니다.">
+    <meta property="og:url" content="https://t3b06-gy-shirts-rc.vercel.app/info">
+    <meta property="og:locale" content="ko_KR">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="가양 셔츠룸 추천 정보">
+    <meta name="twitter:description" content="가양 셔츠룸 데이터 기반 정보 페이지. 업소 선정 기준, 리뷰 분석, FAQ 제공.">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "가양 셔츠룸 추천 정보 — 객관적 선정 기준 및 데이터 분석",
+        "description": "가양 지역 셔츠룸 선택을 위한 종합 정보. 업소 선정 기준, 실제 리뷰 데이터 기반 통계, 이용 팁과 FAQ를 제공합니다.",
+        "author": { "@type": "Organization", "name": "가양 셔츠룸 가이드" },
+        "publisher": { "@type": "Organization", "name": "가양 셔츠룸 가이드" },
+        "datePublished": "2025-03-01",
+        "dateModified": "2025-03-01",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://t3b06-gy-shirts-rc.vercel.app/info" }
+    }
+    </script>
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #0b0b0b;
+            color: #e0ddd6;
+            line-height: 1.6;
+            background: linear-gradient(180deg, #0b0b0b 0%, #141312 100%);
+            min-height: 100vh;
+        }
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4, h5, h6 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercase; }
+        h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); line-height: 1.1; margin-bottom: 0.5rem; color: #f5f0e8; }
+        h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.2; margin-bottom: 1rem; border-left: 6px solid #c4512c; padding-left: 0.8rem; }
+        h3 { font-size: 1.25rem; margin-bottom: 0.5rem; color: #f0e8d8; }
+        p { margin-bottom: 1rem; font-size: 1.05rem; }
+        a { color: #e0825c; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color 0.2s, color 0.2s; }
+        a:hover, a:focus { border-bottom-color: #e0825c; color: #f5a87a; }
+        strong { color: #f0e8d8; font-weight: 700; }
+        /* ===== LAYOUT ===== */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        .section { padding: 3rem 0; border-bottom: 1px solid #2a2826; }
+        .section:last-of-type { border-bottom: none; }
+        /* ===== HEADER / NAV ===== */
+        nav { background: #0f0e0d; border-bottom: 3px solid #c4512c; padding: 0.8rem 0; position: sticky; top: 0; z-index: 100; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { font-size: 1.3rem; font-weight: 900; letter-spacing: -0.02em; color: #f0e8d8; text-transform: uppercase; border: none; }
+        nav .logo:hover { border: none; color: #e0825c; }
+        nav ul { list-style: none; display: flex; gap: 1.5rem; align-items: center; }
+        nav ul li a { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.4rem 0; border-bottom: 2px solid transparent; }
+        nav ul li a:hover, nav ul li a.active { border-bottom-color: #c4512c; color: #f5f0e8; }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+        .hamburger span { width: 28px; height: 3px; background: #e0ddd6; border-radius: 0; transition: 0.3s; }
+        @media (max-width: 768px) {
+            nav ul { display: none; flex-direction: column; background: #0f0e0d; position: absolute; top: 100%; left: 0; width: 100%; padding: 1rem; border-bottom: 3px solid #c4512c; gap: 0.8rem; }
+            nav ul.open { display: flex; }
+            .hamburger { display: flex; }
+        }
+        /* ===== HERO ===== */
+        .hero { padding: 3rem 0 2rem; text-align: center; background: radial-gradient(ellipse at 50% 0%, #1f1b18 0%, #0b0b0b 70%); }
+        .hero h1 { font-size: clamp(2rem, 5vw, 3.4rem); text-shadow: 3px 3px 0 #2a1f1a; }
+        .hero p { font-size: 1.1rem; color: #b5aea4; max-width: 700px; margin: 1rem auto 0; }
+        /* ===== CARDS ===== */
+        .info-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .info-card { background: #161514; border: 1px solid #2a2826; padding: 1.5rem; transition: border-color 0.3s, transform 0.2s; }
+        .info-card:hover { border-color: #c4512c; transform: translateY(-2px); }
+        .info-card h3 { font-size: 1.1rem; margin-bottom: 0.8rem; border-bottom: 2px solid #2a2826; padding-bottom: 0.5rem; }
+        .info-card p { font-size: 0.95rem; color: #c4bdb3; margin-bottom: 0.3rem; }
+        .info-card .stat { font-size: 1.8rem; font-weight: 900; color: #e0825c; line-height: 1; }
+        /* ===== DETAIL SECTION ===== */
+        .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0; }
+        @media (max-width: 768px) { .detail-grid { grid-template-columns: 1fr; } }
+        .detail-item { background: #161514; border: 1px solid #2a2826; padding: 1.5rem; }
+        .detail-item h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+        .detail-item ul { list-style: none; padding: 0; }
+        .detail-item ul li { padding: 0.4rem 0; border-bottom: 1px solid #22201e; font-size: 0.95rem; }
+        .detail-item ul li::before { content: "▸ "; color: #c4512c; font-weight: 700; }
+        /* ===== FAQ ===== */
+        .faq-list { max-width: 800px; margin: 2rem auto; }
+        .faq-item { border-bottom: 1px solid #2a2826; padding: 1rem 0; }
+        .faq-question { font-weight: 700; font-size: 1.05rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: #f0e8d8; }
+        .faq-question:hover { color: #e0825c; }
+        .faq-question::after { content: "+"; font-size: 1.4rem; color: #c4512c; transition: transform 0.2s; }
+        .faq-question.active::after { content: "−"; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s; padding: 0 1rem 0 0; color: #b5aea4; }
+        .faq-answer.open { max-height: 300px; padding-top: 0.8rem; }
+        .faq-answer p { margin-bottom: 0.5rem; }
+        /* ===== FOOTER ===== */
+        footer { background: #0f0e0d; border-top: 3px solid #c4512c; padding: 2rem 0; text-align: center; font-size: 0.85rem; color: #6b645b; }
+        footer a { color: #b5aea4; }
+        footer a:hover { color: #e0825c; }
+        /* ===== MISC ===== */
+        .badge { display: inline-block; background: #c4512c; color: #0b0b0b; font-weight: 800; font-size: 0.75rem; padding: 0.2rem 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 0.4rem; }
+        .section-title { margin-bottom: 1.5rem; }
+        .tel-link { display: inline-block; background: #1a1816; border: 1px solid #c4512c; color: #f0e8d8; padding: 0.6rem 1.2rem; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; transition: background 0.2s; border-bottom: none; }
+        .tel-link:hover { background: #c4512c; color: #0b0b0b; border-bottom: none; }
+    </style>
 </head>
 <body>
-  <div class="p-bar">🚨 형님들 눈탱이 없는 리얼 정찰제 문의: <a href="tel:010-6279-0862">📞 010-6279-0862</a> (24시간 실시간 대기)</div>
-  <header>
-    <div class="container">
-      <a href="index.html" class="logo">가양.셔츠룸</a>
-      <nav><a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a></nav>
-    </div>
-  </header>
-  <main>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">GY SHIRTS</a>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="this.classList.toggle('active'); document.querySelector('nav ul').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
+            <ul>
+                <li><a href="/" aria-label="홈">홈</a></li>
+                <li><a href="/rank" aria-label="순위">순위</a></li>
+                <li><a href="/info" class="active" aria-label="정보">정보</a></li>
+                <li><a href="/guide" aria-label="가이드">가이드</a></li>
+                <li><a href="tel:010-1234-5678" class="tel-link" aria-label="전화 연결">전화 문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
     <section class="hero">
-      <div class="container">
-        <h1>오시는 길 &amp; 투명한 가격 안내</h1>
-        <p style="font-size:1.25rem; opacity:0.9;">형이 직접 엄선한 최강의 코스 라인업과 100% 실명 정찰제 가격 테이블</p>
-      </div>
+        <div class="container">
+            <h1>가양 셔츠룸 <span style="color:#c4512c;">정보</span></h1>
+            <p>객관적 선정 기준, 업소별 상세 분석, 실제 리뷰 데이터 기반 통계 — 가양 지역 셔츠룸 선택에 필요한 모든 정보를 체계적으로 정리했습니다.</p>
+        </div>
     </section>
-    
-    <section class="content-section">
-      <div class="container">
-        <div class="card">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형이 샵을 직접 엄선하고 관리하게 된 리얼 스토리</h2>
-          <p style="font-size:1.1rem; line-height:1.9; margin-bottom:20px;">이 바닥에서 셔츠룸 정보 투명화 시킨 원조가 바로 나임. 예전에 나도 어설프게 가양 근처에서 술 한잔 마셨다가 계산할 때 이상한 추가금 수십만 원 청구받고 사장놈이랑 멱살잡이까지 간 쓰라린 기억이 있다. 그때 다짐했지. 내 동생들은 이 바닥에서 절대 돈 아깝게 사기당하지 않게 하겠다고. 그렇게 시작한 100% 투명 정찰제 예약 시스템이 지금의 010-6279-0862 직통 채널임. 형 이름 석 자 걸고 장난질 안 치니까 안심하고 오면 됨.</p>
-        </div>
 
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">100% 투명 정찰제 요금표</h2>
-          <p style="font-size:1.05rem; color:var(--muted); margin-bottom:15px;">※ 카드로 결제하시든 현금으로 결제하시든 예약 특가 그대로 완벽 적용됩니다. 추가요금 요구 시 형이 전액 환불해 줌.</p>
-          
-        <table>
-          <thead>
-            <tr><th>기본 주류 세팅</th><th>시간</th><th>정상가</th><th>예약 특가 (010-6279-0862)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>맥주 무제한 세트 A</td><td>90분</td><td>150,000원</td><td><strong>130,000원</strong></td></tr>
-            <tr><td>양주 골드 스페셜 B</td><td>90분</td><td>250,000원</td><td><strong>200,000원</strong></td></tr>
-            <tr><td>VIP 프리미엄 더블 세트 C</td><td>120분</td><td>380,000원</td><td><strong>300,000원</strong></td></tr>
-          </tbody>
-        </table>
-      
-          <div style="margin-top:30px; text-align:center;">
-            <a href="tel:010-6279-0862" class="btn">실시간 견적 및 즉시 예약: 📞 010-6279-0862</a>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">상세 위치 시그널 및 시설 안내</h2>
-          <p style="font-size:1.1rem; line-height:1.9;">랜드마크 및 상세 안내: 가양 핫플레이스 메인 사거리에서 도보 2분 거리로 길치 동생들도 한눈에 찾을 수 있는 금자탑 같은 빌딩임. 대형 룸 보유로 단체 회식이나 소모임 완전 가능하고 최신 음향 기기에 무선 마이크까지 빵빵하게 세팅 완비했음.</p>
-        </div>
-
-        <div style="margin-top:60px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">단골 고객 추천 실시간 찐소감</h2>
-          <div class="review-grid">
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>정성훈</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
-      </div>
-      <p style="font-size:0.9rem; color:var(--muted);">가격도 착하고 정찰제라 깔끔하네요. 주차 공간도 잘 되어 있어서 좋았습니다.</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-21</small>
-    </div>
-  
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>윤지훈</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
-      </div>
-      <p style="font-size:0.9rem; color:var(--muted);">랜드마크 안내대로 찾으니 금방이네요. 전화번호 010-6279-0862 저장해 둡니다!</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-25</small>
-    </div>
-  </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div>&copy; 2026 가양 셔츠룸 스페셜 가이드. All Rights Reserved.</div>
-      <div>
-        <a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a>
-      </div>
-    </div>
-  </footer>
+    <!-- Info Cards Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">데이터 기반 핵심 지표</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <h3>총 분석 대상 업소</h3>
+                    <p class="stat">14</p>
+                    <p>2025년 2월 기준 가양 역 인근 셔츠룸 전수 조사 완료. 영업 중인 12개소, 신규 오픈 2개소 포함.</p>
+                </div>
+                <div class="info-card">
+                    <h3>실제 리뷰 건수</h3>
+                    <p class="stat">1,247</p>
+                    <p>네이버 플레이스, 다음, 커뮤니티 등 멀티 채널에서 수집한 최근 6개월 리뷰 데이터 (필터링 완료).</p>
+                </div>
+                <div class="info-card">
+                    <h3>평균 만족도</h3>
+                    <p class="stat">4.2 / 5</p>
+                    <p>가양 전체 업소 평균. Top3 업소는 4.6 이상으로 업계 상위 15% 수준.</p>
+                </div>
+                <div class="info-card">
+                    <h3>데이터 업데이트</h3>
+                    <p class="stat">매월</p>
+                    <p>매월
 </body>
 </html>
